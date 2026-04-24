@@ -1,12 +1,12 @@
 :root {
-    --header-color: #01a3a4;
+    --header-color: #FFBF2B;
     --bg-color: #eee;
     --text-color: #222;
     --card-bg: #fff;
 }
 
 [data-theme="dark"] {
-    --header-color: #0a3d62;
+    --header-color: #E1AB2D;
     --bg-color: #1a1a2e;
     --text-color: #eee;
     --card-bg: #16213e;
