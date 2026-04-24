@@ -1,5 +1,18 @@
 const API_URL = 'https://api.github.com/users/gabedossa';
 
+const themeToggle = document.getElementById('themeToggle');
+
+themeToggle.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        themeToggle.textContent = '🌙 Escuro';
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeToggle.textContent = '☀️ Claro';
+    }
+});
+
 fetch(API_URL)
     .then(response => response.json())
     .then(data => {
